@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; 
+
+}
+body {
+    background-color: #4c175a; 
+    margin: 50px 2%;
+}
+
+/* container title */
+.container-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: #ecf2f4;
+    text-shadow: 3px 1px black;
+}
+
+/* container */
+.inputcol {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 55% 10%; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.textarea {
+    min-height: 40px; /* Adjusted height */
+    height: 40px; /* Adjusted height */
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    border-color: #27214f;
+    font-size: 18px; /* Adjusted font size */
+    padding: 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #ecf2f4; /* Background color */
+    color: #27214f; /* Text color */
+}
+
+.textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #27214f;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #9a52a3; /* Changed scrollbar color */
+    cursor: pointer;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.buttoninput {
+    border-radius: 10px;
+    border-color: #27214f;
+    background-color: white;
+    font-size: 20px;
+}
+
+.buttoninput:hover {
+    background-color: #9a52a3; 
+    color: white;
+}
+
+/* js */
+.todolist {
+    margin-top: 20px;
+}
+
+.itemall {
+    display: grid;
+    grid-template-columns: 55% 5% 5%; 
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.item, .check-button, .trash-button {
+    border: none;
+    background-color: #ecf2f4; 
+    min-height: 40px; 
+    padding: 10px 10px;
+}
+
+.item {
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-content: center;
+    font-size: 18px; 
+    color: #27214f; 
+}
+
+.check-button, .trash-button {
+    font-size: 15px;
+}
+
+.trash-button {
+    border-radius: 0 10px 10px 0;
+}
+
+.check-button:hover {
+    background-color: #863b87; 
+    color: white;
+}
+
+.trash-button:hover {
+    background-color: #9a52a3; 
+    color: white;
+}
+
+.checklist {
+    text-decoration: line-through;
+}
+
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+
+button, .check-button, .trash-button {
+    cursor: pointer;
+}
+
+
+.container-title::before {
+    content: "📝 ";
+}
